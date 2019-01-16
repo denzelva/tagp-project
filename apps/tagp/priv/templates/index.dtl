@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>TAGP Project!</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css" integrity="sha384-jzngWsPS6op3fgRCDTESqrEJwRKck+CILhJVO5VvaAZCq8JYf8HsR/HPpBOOPZfR" crossorigin="anonymous">
+  </head>
+
+  <style>
+	.button-container form,
+	.button-container form div {
+	    display: inline;
+	    margin-left: 100px;
+	}
+	
+	.button-container button {
+	    display: inline;
+	    vertical-align: middle;
+	    width: 150px;
+	}
+  </style>
+
+  <body>
+
+    <nav class="navbar navbar-default">
+	<div class="container-fluid">
+	    <div class=navbar-header">
+		<a class="navbar-brand" href="#">TAGP Project: Denzel Vanrompay</a>
+	    </div>
+	    <div>
+		<ul class="nav navbar-nav">
+		    <li class="active"><a href="#">Home</a></li>
+		    <li><a href="/over">Meer info</a></li>
+		</ul>
+	    </div>
+	</div>
+    </nav>
+
+    <h2 style="margin-left: 200px;">Bedienen van de led's</h2>
+    <p style="margin-left: 200px;">Druk op de onderstaande knoppen of respectievelijk de rode, gele, of groene led te laten branden.</p>
+    <br>
+
+    <div class="button-container">
+	<br>
+	<form role="form" method="POST" action="redOn">
+	    <div>
+	        <button type="submit" class="btn btn-danger">Rood aan</button>
+	    </div>
+    	</form>
+	<form role="form" method="POST" action="redOff">
+	    <div>
+	        <button type="submit" class="btn btn-danger">Rood uit</button>
+	    </div>
+    	</form>
+	<br>
+	<br>
+	<form role="form" method="POST" action="yellowOn">
+	    <div>
+	        <button type="submit" class="btn btn-warning">Geel aan</button>
+	    </div>
+    	</form>
+	<form role="form" method="POST" action="yellowOff">
+	    <div>
+	        <button type="submit" class="btn btn-warning">Geel uit</button>
+	    </div>
+    	</form>
+	<br>
+	<br>
+	<form role="form" method="POST" action="greenOn">
+	    <div>
+	        <button type="submit" class="btn btn-success">Groen aan</button>
+    	    </div>
+	</form>
+	<form role="form" method="POST" action="greenOff">
+	    <div>
+	        <button type="submit" class="btn btn-success">Groen uit</button>
+	    </div>
+    	</form>
+	<br>
+	<br>
+        <br>	
+	<p style="margin-left: 200px;">Onderstaande knop laat 10 keer de led's van groen naar rood lopen.</p>
+	<br>
+	<form role="form" method="POST" action="flashlights">
+	    <div>
+	        <button type="submit" class="btn btn-primary">Loop</button>
+	    </div>
+    	</form>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's Javascript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+  </body>
+</html>
+

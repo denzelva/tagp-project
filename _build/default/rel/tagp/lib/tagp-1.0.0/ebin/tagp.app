@@ -1,0 +1,13 @@
+{application,tagp,
+             [{description,"TAGP Project"},
+              {vsn,"1.0.0"},
+              {modules,[flashlights_handler,gpio,greenOff_handler,
+                        greenOn_handler,index_dtl,over_dtl,over_handler,
+                        redOff_handler,redOn_handler,reset_handler,
+                        statistiek_dtl,tagp,tagp_app,tagp_handler,
+                        yellowOff_handler,yellowOn_handler]},
+              {registered,[tagp]},
+              {applications,[kernel,stdlib,cowboy,erlydtl,runtime_tools,wx,
+                             observer]},
+              {mod,{tagp_app,[]}},
+              {env,[]}]}.

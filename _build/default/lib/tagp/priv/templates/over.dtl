@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Teller!</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap-theme.min.css" integrity="sha384-jzngWsPS6op3fgRCDTESqrEJwRKck+CILhJVO5VvaAZCq8JYf8HsR/HPpBOOPZfR" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+	    <div class=navbar-header">
+		<a class="navbar-brand" href="#">Teller</a>
+	    </div>
+	    <div>
+		<ul class="nav navbar-nav">
+		    <li><a href="/">Home</a></li>
+		    <li class="active"><a href="#">Over</a></li>
+		    <li><a href="/statistiek">Statistiek</a></li>
+		</ul>
+	    </div>
+	</div>
+    </nav>
+
+    <div class="container">
+        <h2>Request</h2>
+	<ul>
+	    <li>Method: {{ req.method }}</li>
+            <li>Url: {{ req.url }}</li>
+            <li>Host: {{ req.host }}</li>
+            <li>Port: {{ req.port }}</li>
+            <li>Path: {{ req.path }}</li>
+            <li>Peer: {{ req.peer }}</li>
+        </ul>
+    </div>
+    
+    <!-- jQuery (necessary for Bootstrap's Javascript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js" integrity="sha384-vhJnz1OVIdLktyixHY4Uk3OHEwdQqPppqYR8+5mjsauETgLOcEynD9oPHhhz18Nw" crossorigin="anonymous"></script>
+  </body>
+</html>
